@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,7 +11,7 @@
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>  
     <script type="text/javascript" src="/socket.io/socket.io.js"></script> 
     <!-- esto viene de main es el socket -->
-    <video src="" id="video" style="width: 680px;height: 320;" autoplay="true"></video>
+    <center><video src="" id="video" style="width: 680px;height: 320;" autoplay="true"></video></center>
 
     <canvas style="display: none" id=preview></canvas>
     <!-- elemento HTML se utiliza para dibujar gráficos en una página  -->
@@ -51,6 +52,10 @@
              viewVideo(video,context)
          },1)//esto muestra el video y el numero son los cuadros por milisegundo 
             })
-    </script> 
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script> 
 </body>
 </html>

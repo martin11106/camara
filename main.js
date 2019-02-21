@@ -15,3 +15,5 @@ io.on('connection',function(socket){//esto conecta
     })
 })
 http.listen(3000)//puerto :v
+
+console.log("Servidor Activo")
