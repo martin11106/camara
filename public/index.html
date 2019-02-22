@@ -11,13 +11,18 @@
 </head>
 <body style="background-image: url(https://www.diligent.es/wp-content/uploads/2017/08/el-mejor-objetivo-para-fotografia-de-producto-de-tu-tienda-online.jpg)">
 
-  <center><div style="position: relative;">
-  <button style="background-color: red" type="button"><a style="color: white" href="transmitir.html">Transmitir</a></button>
+  <div style=" position: absolute; top: 38%; left:42%; width: 200px; height: 200px; background-color: white; border-radius: 20%">
+  <button onclick="window.open('transmitir.html', 'Emision' ,'width: 200; height: 200')" style="background-color: red; position:absolute; border-radius: 10px; top: 25%; width: 200px" type="button"><a style="color: white;" href="javascript:femi('transmitir.html')">Transmitir</a></button>
   <br>
   <br>
-  <button style= "background-color: blue" type="button"><a style="color: white" href="emitir.html">Emitir</a></button>
-  </div></center>
+  <button onclick="tra('emitir.html')" style= "background-color: blue; position:absolute; border-radius: 10px; top:55%; width: 200px" type="button"><a style="color: white" href="emitir.html" target="_blank" >Emitir</a></button>
+  </div>
   
+  <script language=javascript>
+      function tra (url){
+      window.open(url, "Transmisión")
+      }
+  </script>
 </body>
 </html>
 
