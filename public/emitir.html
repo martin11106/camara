@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Emisión</title>
 </head>
-<body>
+<body style="background-image: url(http://www.hdfondos.eu/preview/get_photo/568052/1920/1200)">
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>  
     <script type="text/javascript" src="/socket.io/socket.io.js"></script> 
     <!-- esto viene de main es el socket -->
@@ -15,7 +15,7 @@
 
     <canvas style="display: none" id=preview></canvas>
     <!-- elemento HTML se utiliza para dibujar gráficos en una página  -->
-    <div id="logger"></div>
+    <center><div style="color: white" id="logger"></div></center>
     <script type="text/javascript">
         var canvas=document.getElementById("preview")//esto transformo camvas a una variable
         var context=canvas.getContext('2d')//etorna un contexto de dibujo en el lienzo, con valores 2d
@@ -33,10 +33,10 @@
         }
         function loadCam(stream){
             video.srcObject=stream;//esto es para resivir el video
-            logger('camara conectada')
+            logger('Conexión exitosa')
         }
         function loadFail(){
-             logger('camara no conectada')
+             logger('Conexión errónea')
         }
         function viewVideo(video,context){
             context.drawImage(video,0,0,context.width,context.height)//aqui dibuja el video con los tamaños establecidos
